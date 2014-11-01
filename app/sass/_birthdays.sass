@@ -1,0 +1,72 @@
+$birthday_color: #2aa59b
+$birthday_border-color: #9fddd8
+$birthday_active_color: #ff8b00
+$birthday_border_active_color: #ff9c2a
+
+.m-birthday-item
+  color: $birthday_color
+  margin-bottom: 20px
+  a
+    color: $birthday_color
+.m-birthday-date
+  float: left
+  width: 115px
+  padding-right: 8px
+  font-size: 14px
+  line-height: 14px
+  padding-top: 2px
+.m-birthday-summary
+  margin-left: 123px
+.m-birthday-header
+  padding: 0 0 6px 10px
+  margin-bottom: 15px
+  min-height: 15px
+  font-size: 18px
+  line-height: 14px
+  border-left: 3px solid $birthday_border-color
+  border-bottom: 1px solid $birthday_border-color
+.m-birthday-persons
+  overflow: hidden
+  border-left: 3px transparent
+.m-birthday-person
+  float: left
+  width: 50%
+  margin: 0 0 16px
+.m-birthday-person-avatar
+  display: table-cell
+  vertical-align: middle
+  padding: 0 25px
+  img
+.m-birthday-person-name
+  display: table-cell
+  vertical-align: middle
+
+
+// Active state
+.m-birthday-item__type-current,
+.m-birthday-item__type-current a
+  color: $birthday_active_color
+
+.m-birthday-item__type-current
+  margin-bottom: 35px
+  .m-birthday-date
+    padding-top: 9px
+  .m-birthday-summary
+    border: 1px solid $birthday_border_active_color
+    border-left: 3px solid $birthday_border_active_color
+  .m-birthday-header
+    background: #f5f5f5
+    border: none
+    padding: 6px 0 6px 10px
+  .m-birthday-persons
+    border-left: none
+
+// Responsive rules
+@media screen and (max-width: 960px)
+  .m-birthday-person
+    width: 100%
+
+@media screen and (max-width: 580px)
+  .m-birthday-person-avatar
+    padding-left: 10px
+    padding-right: 10px
