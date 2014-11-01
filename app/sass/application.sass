@@ -1,28 +1,13 @@
-
+@font-face
+  font-family: "wf_SegoeUILight"
+  src: url('../fonts/segoUIlight.woff') format('woff')
+  font-weight: normal
+  font-style: normal
 
 body
-  background-color: #ccc
+  font-family: "wf_SegoeUILight"
 
-b,
-strong
-  font-weight: bold
-i,
-pre
-  font-style: italic
+.main
+  padding: 50px
 
-h1
-  transition: 0.5s all ease
-
-@import 'partial'
-
-
-@import 'base64'
-
-.icon-geo
-  @extend %data-icon_geo
-  width: 8px
-  height: 11px
-  font-size: 0
-
-
-
+@import "_birthdays"
