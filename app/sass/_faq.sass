@@ -1,6 +1,6 @@
 .m-faq
   color: #545454
-.m-faq-item
+
 .m-faq-header
   margin-bottom: 14px
   background-color: #e7e7e7
@@ -12,9 +12,19 @@
     background-color: #f5f5f5
     border-left: 3px solid #ff9b30
     padding-left: 14px
+  &.active
+    background-color: #f5f5f5
+    border-left: none
+    padding-left: 17px
+    &:hover
+      background-color: #e7e7e7
+      border-left: 3px solid #ff9b30
+      padding-left: 14px
+
 .m-faq-content
   padding-top: 8px
   display: none
+
 .m-faq-question
 .m-faq-question-header
   margin: 0 0 0 6px
@@ -30,6 +40,7 @@
   font-size: 18px
   padding: 4px 0 0
   margin: 0 0 14px 15px
+
 .m-faq-answer
   &:last-child
     .m-faq-answer-content
@@ -53,4 +64,3 @@
   padding: 0 0 0 15px
   border-bottom: 3px solid #e7e7e7
   margin: 0 0 24px
-  p
