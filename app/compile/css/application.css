@@ -24,6 +24,10 @@ body {
   text-align: center;
 }
 
+.m-nyromodal-form {
+  display: none;
+}
+
 .m-birthday-item {
   color: #2aa59b;
   margin-bottom: 20px;

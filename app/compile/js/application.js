@@ -13,4 +13,8 @@
     });
   });
 
+  $(document).ready(function() {
+    return $('.m-nyromodal-form-link').nyroModal();
+  });
+
 }).call(this);

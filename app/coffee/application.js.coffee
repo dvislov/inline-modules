@@ -12,3 +12,8 @@ $(document).ready ->
 
       $(this).addClass('active')
       $(this).next('.m-faq-content').show(400)
+
+# Form popups
+
+$(document).ready ->
+  $('.m-nyromodal-form-link').nyroModal()
