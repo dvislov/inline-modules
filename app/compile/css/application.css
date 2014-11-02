@@ -13,6 +13,17 @@ body {
   padding: 50px;
 }
 
+.m-button {
+  display: inline-block;
+  background-color: #8da5a9;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 10px 8px;
+  min-width: 165px;
+  text-align: center;
+}
+
 .m-birthday-item {
   color: #2aa59b;
   margin-bottom: 20px;
@@ -110,6 +121,7 @@ body {
 
 .m-faq {
   color: #545454;
+  margin-bottom: 20px;
 }
 
 .m-faq-header {
