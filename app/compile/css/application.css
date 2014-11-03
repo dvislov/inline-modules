@@ -212,4 +212,98 @@ body {
   margin: 0 0 24px;
 }
 
+.metro-grid-5 .metro-row {
+  margin-bottom: 10px;
+  height: 136px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.metro-grid-5 .metro-row:before,
+.metro-grid-5 .metro-row:after {
+  content: "";
+  display: table;
+}
+
+.metro-grid-5 .metro-row:after {
+  clear: both;
+}
+
+.metro-grid-5 div[class^="box-w"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.metro-grid-5 div[class*="-w1"] {
+  width: 20%;
+}
+
+.metro-grid-5 div[class*="-w2"] {
+  width: 40%;
+}
+
+.metro-grid-5 div[class*="-w3"] {
+  width: 60%;
+}
+
+.metro-grid-5 div[class*="-w4"] {
+  width: 80%;
+}
+
+.metro-grid-5 div[class*="-w5"] {
+  width: 100%;
+}
+
+.metro-grid-5 div[class*="-h1"] .box-content {
+  height: 100%;
+  padding-bottom: 0px;
+}
+
+.metro-grid-5 div[class*="-h2"] .box-content {
+  height: 200%;
+  padding-bottom: 10px;
+}
+
+.metro-grid-5 div[class*="-h3"] .box-content {
+  height: 300%;
+  padding-bottom: 20px;
+}
+
+.metro-grid-5 div[class*="-h4"] .box-content {
+  height: 400%;
+  padding-bottom: 30px;
+}
+
+.metro-grid-5 div[class*="-h5"] .box-content {
+  height: 500%;
+  padding-bottom: 40px;
+}
+
+.metro-grid-5 .offset-1 {
+  margin-left: 20%;
+}
+
+.metro-grid-5 .offset-2 {
+  margin-left: 40%;
+}
+
+.metro-grid-5 .offset-3 {
+  margin-left: 60%;
+}
+
+.metro-grid-5 .offset-4 {
+  margin-left: 80%;
+}
+
+.metro-grid-5 .box-content {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
 /*# sourceMappingURL=application.css.map */

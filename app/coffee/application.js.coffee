@@ -13,7 +13,24 @@ $(document).ready ->
       $(this).addClass('active')
       $(this).next('.m-faq-content').show(400)
 
+
 # Form popups
 
 $(document).ready ->
   $('.m-nyromodal-form-link').nyroModal()
+
+
+# News grid
+
+$(window).resize ->
+  if (parseInt($('body').width()) > 960)
+    getMetroItemSize(5)
+
+$(document).ready ->
+  if (parseInt($('body').width()) > 960)
+    getMetroItemSize(5)
+
+getMetroItemSize = (num) ->
+  boxItemSize = Math.round(parseInt($('.metro-grid-' + num + ' .metro-row').width()) / num - 10)
+  $('.metro-grid-' + num + ' .metro-row').css
+    height: boxItemSize + 'px'
