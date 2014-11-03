@@ -56,7 +56,34 @@ $max-box-height: 5
 
 .box-content-inner
   padding: 10px
+  box-sizing: border-box
+  height: 100%
+  overflow: auto
+  position: relative
 
+  h2
+    margin: 0 0 6px
+    font-size: 18px
+  p
+    font-size: 12px
+    margin: 0
+  img.left
+    height: 100%
+    margin-right: 10px
+    float: left
+    & + .box-content-annotation
+      height: 100%
+      overflow: auto
+  img.top
+    width: 100%
+    margin-bottom: 4px
+
+  .m-news-aummary
+    width: 100%
+    box-sizing: border-box
+    background-color: #e7e7e7
+    font-size: 12px
+    color: #868686
 
 // Adaptivity
 @media screen and (max-width: 960px)
@@ -70,3 +97,9 @@ $max-box-height: 5
         padding-bottom: 0
     div[class*="offset-"]
       margin-left: 0
+
+    .box-content-inner
+      img
+        width: 100%
+        float: none
+        height: auto

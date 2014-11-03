@@ -13,6 +13,14 @@ body {
   padding: 50px;
 }
 
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
 .nyroModalCont {
   border: none;
   border-right: 89px solid #555555;
@@ -376,6 +384,48 @@ body {
 
 .box-content-inner {
   padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.box-content-inner h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.box-content-inner p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.box-content-inner img.left {
+  height: 100%;
+  margin-right: 10px;
+  float: left;
+}
+
+.box-content-inner img.left + .box-content-annotation {
+  height: 100%;
+  overflow: auto;
+}
+
+.box-content-inner img.top {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.box-content-inner .m-news-aummary {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e7e7e7;
+  font-size: 12px;
+  color: #868686;
 }
 
 @media screen and (max-width: 960px) {
@@ -394,6 +444,12 @@ body {
 
   .metro-grid-5 div[class*="offset-"] {
     margin-left: 0;
+  }
+
+  .metro-grid-5 .box-content-inner img {
+    width: 100%;
+    float: none;
+    height: auto;
   }
 }
 
