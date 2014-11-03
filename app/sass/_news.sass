@@ -53,6 +53,9 @@ $max-box-height: 5
   max-width: 938px
   h2
     margin-top: 0
+  a
+    text-decoration: none
+    color: #000
 
 .box-content-inner
   padding: 10px
@@ -67,6 +70,13 @@ $max-box-height: 5
   p
     font-size: 12px
     margin: 0
+  .m-news-summary
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    box-sizing: border-box
+    padding: 0 10px
   img.left
     height: 100%
     margin-right: 10px
@@ -74,16 +84,41 @@ $max-box-height: 5
     & + .box-content-annotation
       height: 100%
       overflow: auto
+      position: relative
+      .m-news-summary
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        box-sizing: border-box
+        padding: 0
   img.top
     width: 100%
     margin-bottom: 4px
 
-  .m-news-aummary
-    width: 100%
-    box-sizing: border-box
-    background-color: #e7e7e7
-    font-size: 12px
-    color: #868686
+.m-news-summary
+  font-size: 12px
+  color: #868686
+  overflow: hidden
+
+// News detail
+#news_detail
+  display: none
+.news-detail-page
+  padding: 40px 35px
+.news-detail-page-header
+  border-bottom: 2px solid #e7e7e7
+  margin-bottom: 12px
+  font-size: 12px
+  color: #0082d9
+  padding: 0 0 4px
+.news-detail-aside
+  width: 390px
+  float: right
+  margin-left: 56px
+.news-detail-content
+  font-size: 12px
+  margin-right: 446px
 
 // Adaptivity
 @media screen and (max-width: 960px)
@@ -103,3 +138,8 @@ $max-box-height: 5
         width: 100%
         float: none
         height: auto
+
+    .m-news-summary
+      position: relative !important
+      padding: 10px 0 0 0 !important
+
