@@ -1,3 +1,5 @@
+// Metro UI grid
+
 $gutter: 10px
 
 $max-box-width: 5
@@ -45,4 +47,26 @@ $max-box-height: 5
 .metro-grid-5
   @include metro-ui-grid(5)
 
+
+// News
 .m-news
+  max-width: 938px
+  h2
+    margin-top: 0
+
+.box-content-inner
+  padding: 10px
+
+
+// Adaptivity
+@media screen and (max-width: 960px)
+  .metro-grid-5
+    div[class*="-w"]
+      width: 100%
+      margin-bottom: $gutter
+    div[class*="-h"]
+      height: auto
+      .box-content
+        padding-bottom: 0
+    div[class*="offset-"]
+      margin-left: 0

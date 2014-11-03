@@ -366,4 +366,35 @@ body {
   background-color: #e7e7e7;
 }
 
+.m-news {
+  max-width: 938px;
+}
+
+.m-news h2 {
+  margin-top: 0;
+}
+
+.box-content-inner {
+  padding: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .metro-grid-5 div[class*="-w"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .metro-grid-5 div[class*="-h"] {
+    height: auto;
+  }
+
+  .metro-grid-5 div[class*="-h"] .box-content {
+    padding-bottom: 0;
+  }
+
+  .metro-grid-5 div[class*="offset-"] {
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=application.css.map */
