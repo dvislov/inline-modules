@@ -85,5 +85,17 @@ html
       a.m-button.m-nyromodal-form-link(href="#add_question_form") Задать вопрос
 
       #add_question_form.m-nyromodal-form
-        | Test
+        .m-nyromodal-form-content
+          h1 Задать вопрос
+
+          .m-popup-form
+            .m-form-group
+              select
+                option Выберите категорию
+                option Турбулентные потоки
+                option Керамические сосуды
+            .m-form-group
+              textarea(placeholder="Введите текст")
+            a.m-button(href="javascript:void(0);") Отправить
+
     include _shared/_footer

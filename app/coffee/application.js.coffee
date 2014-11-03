@@ -17,7 +17,8 @@ $(document).ready ->
 # Form popups
 
 $(document).ready ->
-  $('.m-nyromodal-form-link').nyroModal()
+  $('.m-nyromodal-form-link').nyroModal
+    closeButton: '<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition" title="close">&times;</a>'
 
 
 # News grid

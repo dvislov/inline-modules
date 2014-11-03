@@ -16,7 +16,9 @@
   });
 
   $(document).ready(function() {
-    return $('.m-nyromodal-form-link').nyroModal();
+    return $('.m-nyromodal-form-link').nyroModal({
+      closeButton: '<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition" title="close">&times;</a>'
+    });
   });
 
   $(window).resize(function() {
