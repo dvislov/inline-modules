@@ -83,5 +83,26 @@ html
                 .album-votes 361
             .clearfix
 
-          a.m-button(href="javascript:void(0);") Добавить фотографию
+          a.m-button.m-nyromodal-form-link(href="#add_photo_form") Добавить фотографию
+
+      #add_photo_form.m-nyromodal-form
+        .m-nyromodal-form-content
+          h1 Загрузка фотографии
+
+          .m-popup-form
+            .m-form-group
+              select
+                option Выберите номинацию
+                option Турбулентные потоки
+                option Керамические сосуды
+            .m-form-group
+              .upload-image-source
+                img.upload-image(src="http://lorempixel.com/243/181", alt="Image")
+                a.upload-image-delete(href="javascript:void(0);") &times;
+              .upload-image-info
+                textarea(placeholder="Введите текст")
+              .clearfix
+            a.m-button.pull-right(href="javascript:void(0);") Отправить
+            .clearfix
+
     include _shared/_footer
