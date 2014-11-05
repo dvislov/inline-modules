@@ -21,6 +21,16 @@ body {
   float: right !important;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .nyroModalCont {
   border: none;
   border-right: 89px solid #555555;
@@ -512,6 +522,89 @@ body {
   .metro-grid-5 .m-news-summary {
     position: relative !important;
     padding: 10px 0 0 0 !important;
+  }
+}
+
+.m-photos {
+  max-width: 943px;
+}
+
+.m-album-list-item {
+  background-color: #e7e7e7;
+  padding: 12px;
+  margin: 0 0 12px;
+}
+
+.m-album-content {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 6px 0 0;
+}
+
+.m-album-header {
+  margin: 0 0 10px;
+}
+
+.m-album-description {
+  margin-bottom: 0;
+}
+
+.m-album-gallery {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.m-album-gallery-item {
+  float: left;
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+
+.m-album-gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+.m-album-archive-link {
+  text-decoration: none;
+  color: #000;
+  margin: 24px 0 24px;
+  display: block;
+  border-bottom: 2px solid #e7e7e7;
+  padding: 0 0 4px 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .m-album-content,
+  .m-album-gallery {
+    float: none;
+    width: 100%;
+  }
+
+  .m-album-header,
+  .m-album-description {
+    padding: 0 6px;
+  }
+
+  .m-album-description {
+    margin-bottom: 10px;
+  }
+
+  .m-album-list-item {
+    padding: 12px 6px;
+  }
+
+  .m-album-gallery-item {
+    padding: 0 6px;
   }
 }
 
