@@ -730,4 +730,73 @@ body {
   margin-left: 260px;
 }
 
+.vote-block {
+  float: right;
+  width: 110px;
+  text-align: center;
+}
+
+.photo-title {
+  margin-right: 120px;
+}
+
+.vote-button {
+  background-color: #8da5a9;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  margin-bottom: 6px;
+}
+
+.votes {
+  font-size: 16px;
+  color: #8da5a9;
+}
+
+.fancybox-close {
+  width: 26px;
+  height: 26px;
+  background: url(../img/fancybox_close.png) 0 0 no-repeat;
+  top: 15px;
+  right: 26px;
+}
+
+.fancybox-skin {
+  background: #e7e7e7;
+}
+
+.fancybox-nav span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fancybox-prev {
+  left: -68px;
+}
+
+.fancybox-next {
+  right: -68px;
+}
+
+.fancybox-prev span,
+.fancybox-next span {
+  width: 56px;
+  height: 78px;
+}
+
+.fancybox-prev span {
+  background: url(../img/fancybox_prev.png) 0 0 no-repeat;
+}
+
+.fancybox-next span {
+  background: url(../img/fancybox_next.png) 0 0 no-repeat;
+}
+
+@media screen and (max-width: 960px) {
+  .fancybox-nav {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=application.css.map */

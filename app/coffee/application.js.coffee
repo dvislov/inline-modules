@@ -22,6 +22,27 @@ $(document).ready ->
     stack: true
 
 
+# Gallery lightbox
+
+$(document).ready ->
+  if (parseInt($('body').width()) > 960)
+    fMargin = 20
+  else
+    fMargin = 0
+
+  $('.m-fancybox').fancybox
+    padding: [15,78,15,78]
+    margin: fMargin
+    helpers:
+      overlay:
+        css:
+          'background': 'rgba(0, 0, 0, 0.5)'
+      title:
+        type: 'inside'
+    afterLoad: ->
+      this.title = '<div class="vote-block"><a class="vote-button" href="javascript:void(0);">Голосовать</a><div class="votes">' + 397 + '</div></div><div class="photo-title">' + this.title + '</div><div class="clearfix"></div>';
+
+
 # News grid
 
 $(window).resize ->
